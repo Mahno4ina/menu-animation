@@ -140,7 +140,131 @@ html {
 
 }
 
+.soc-menu {
+    position: fixed;
+    top: 50%;
+    right: -160px;
+    display: inline-block;
+    font-size: 0;
+    width: 200px;
+    z-index: 30;
+    transition: right .3s ease-in-out;
+    -webkit-transition: right .3s ease-in-out;
+    -moz-transition: right .3s ease-in-out;
+    -ms-transition: right .3s ease-in-out;
+    -o-transition: right .3s ease-in-out;
+}
 
+.soc-menu:hover {
+    right: 7px;
+}
+
+.soc-menu:hover .touch {
+    animation: none;
+    transition: transform .1s linear;
+    -webkit-transition: transform .1s linear;
+    -moz-transition: transform .1s linear;
+    -ms-transition: transform .1s linear;
+    -o-transition: transform .1s linear;
+    transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+}
+
+.touch {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    line-height: 1;
+    width: 50px;
+    height: 300px;
+    border: solid 2px purple;
+    border-radius: 10px;
+    background: black;
+    position: relative;
+
+}
+
+
+
+.touch>span {
+    display: block;
+    font-size: 20px;
+    color: purple;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.links {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    vertical-align: bottom;
+    font-size: 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.soc-wrap {
+    position: relative;
+    top: -170px;
+    left: 24px;
+    transform: rotateY(90deg) rotateX(90deg) rotateZ(45deg);
+    transform-origin: 120% 0 0;
+
+}
+
+.soc-menu:hover .soc-wrap {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.links>li>a {
+    text-decoration: none;
+    position: relative;
+    padding: 34px;
+
+}
+
+.links>li>a:before {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 64px;
+    top: 5px;
+    left: 7px;
+    background-image: url(../images/css_sprites.png);
+    background-position: -54px;
+    background-repeat: no-repeat;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.links .facebook>a:before {
+    background-position: 0;
+}
+
+.links .youtube>a:before {
+    background-position: -108px;
+}
+
+.links .instagram>a:before {
+    background-position: -162px;
+}
 .chek {
     position: relative;
 }
