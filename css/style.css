@@ -140,6 +140,117 @@ html {
 
 }
 
+body:before {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(at top right, #0000 70%, #000000);
+    z-index: 0;
+}
+
+body:after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(at top left, #0000 70%, #ffffff);
+    z-index: 0;
+}
+
+
+
+.wrapper_car {
+    width: 1000px;
+    position: relative;
+    z-index: 5;
+}
+
+.wrapper_car img {
+    max-height:600px;
+    border-radius: 450px;
+    -webkit-border-radius: 450px;
+    -moz-border-radius: 450px;
+    -ms-border-radius: 450px;
+    -o-border-radius: 450px;
+}
+
+.wrapper_car>div {
+    display: inline-block;
+    left: 40%;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper_car>div:after {
+    content: "CAR";
+    background-clip:text;
+    -webkit-background-clip: text;
+    background-color: black;
+    background-image: linear-gradient( #700459,);
+    box-shadow: inset 0 0 30px 2px #6a0983;
+    text-align: center;
+    font-size: 30px;
+    width: 110%;
+    position: absolute;
+    left: -3%;
+    top: calc(50% - 12px);
+    display: none;
+}
+
+.wrapper_car>div:hover:after {
+    display: block;
+}
+
+.links2 {
+    border: solid 1px purple;
+    position: fixed;
+    top: 50%;
+    left: 3px;
+    z-index: 10;
+}
+
+.letters2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    color: purple;
+    background: black;
+   
+}
+
+.gallery-menu2 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: calc(50% - 101px);
+    left: 3px;
+    border: solid 1px purple;
+    border-radius: 12px;
+    background: black;
+}
+
+.gallery-menu2>a {
+    text-decoration: none;
+    font-size: 25px;
+    color: purple;
+    margin: 10px;
+}
+.gallery-menu2>a:hover{
+    color: gray;
+}
+
+.links2:hover .gallery-menu2 {
+    display: flex;
+}
+
 .soc-menu {
     position: fixed;
     top: 50%;
