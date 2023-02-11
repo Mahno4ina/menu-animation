@@ -391,6 +391,7 @@ body:after {
 }
 
 #menu {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0;
     text-align: center;
     display: inline-block;
