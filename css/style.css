@@ -516,12 +516,11 @@ li>a {
 }
 
 .ulg {
-    font-family: 'balu';
     position: absolute;
     bottom: -2px;
     right: 100%;
     z-index: 20;
-
+ font-family: 'balu';
 }
 
 .ulg li {
