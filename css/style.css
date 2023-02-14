@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,700;1,400&display=swap');
+ @import url(https://everythingfonts.com/font/face/0I2QRA8Tx3q_Wr3LvlRUIweF);
 html,
 body,
 div,
@@ -488,6 +489,7 @@ li>a {
 }
 
 .fl {
+    font-family: 'goodtimesrg';
     position: absolute;
     top: -2px;
     left: 100%;
