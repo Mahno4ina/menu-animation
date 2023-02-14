@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,700;1,400&display=swap');
- @import url('https://everythingfonts.com/font/face/0I2QRA8Tx3q_Wr3LvlRUIweF');
+@import url('https://everythingfonts.com/font/face/0I2QRA8Tx3q_Wr3LvlRUIweF');
+@font-face {
+    font-family: 'balu';
+    src: url('../Fonts/norwester-webfont.woff2') format('woff2'),
+        url('../Fonts/norwester-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html,
 body,
 div,
@@ -508,6 +516,7 @@ li>a {
 }
 
 .ulg {
+    font-family: 'balu';
     position: absolute;
     bottom: -2px;
     right: 100%;
